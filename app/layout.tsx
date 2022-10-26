@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function RootLayout({children}: any) {
+export default async function RootLayout({children}: any) {
     return (
         <html lang="en">
         <Head>
