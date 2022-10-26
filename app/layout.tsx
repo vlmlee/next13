@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Loading from "./loading";
-import {Suspense} from "react";
 
 export default async function RootLayout({children}: any) {
     return (
@@ -10,9 +8,7 @@ export default async function RootLayout({children}: any) {
             <title>Next.js</title>
         </Head>
         <body>
-        <Suspense fallback={<Loading />}>
             {children}
-        </Suspense>
         <footer className={styles.footer}>
             <a
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
